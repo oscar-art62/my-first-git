@@ -10,8 +10,7 @@ int main(){
     cin.getline(line,101);
     cin>>code;
     for(i=strlen(line)-1;i>=0;i--){
-        for(j=0;j<strlen(line);j++){
-            if(i<j) break;
+        for(j=0;j<=i;j++){
             char sub[101];
             strncpy(sub,line+j,i-j+1);
             sub[i-j+1]='\0';
